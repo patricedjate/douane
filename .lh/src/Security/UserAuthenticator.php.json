@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 4,
+            "activePatchIndex": 8,
             "patches": [
                 {
                     "date": 1674471065947,
@@ -24,6 +24,22 @@
                 {
                     "date": 1674478395659,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,9 +47,9 @@\n             return new RedirectResponse($targetPath);\n         }\n \n          return new RedirectResponse($this->urlGenerator->generate('some_route'));\n-        \n+         \n     }\n \n     protected function getLoginUrl(Request $request): string\n     {\n"
+                },
+                {
+                    "date": 1738967764215,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,9 +46,9 @@\n         if ($targetPath = $this->getTargetPath($request->getSession(), $firewallName)) {\n             return new RedirectResponse($targetPath);\n         }\n \n-         return new RedirectResponse($this->urlGenerator->generate('some_route'));\n+        // return new RedirectResponse($this->urlGenerator->generate('some_route'));\n          \n     }\n \n     protected function getLoginUrl(Request $request): string\n"
+                },
+                {
+                    "date": 1738967886242,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,9 +46,9 @@\n         if ($targetPath = $this->getTargetPath($request->getSession(), $firewallName)) {\n             return new RedirectResponse($targetPath);\n         }\n \n-        // return new RedirectResponse($this->urlGenerator->generate('some_route'));\n+         return new RedirectResponse($this->urlGenerator->generate('some_route'));\n          \n     }\n \n     protected function getLoginUrl(Request $request): string\n"
+                },
+                {
+                    "date": 1738967953543,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,9 +46,9 @@\n         if ($targetPath = $this->getTargetPath($request->getSession(), $firewallName)) {\n             return new RedirectResponse($targetPath);\n         }\n \n-         return new RedirectResponse($this->urlGenerator->generate('some_route'));\n+         return new RedirectResponse($this->urlGenerator->generate(''));\n          \n     }\n \n     protected function getLoginUrl(Request $request): string\n"
+                },
+                {
+                    "date": 1738967969411,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,9 +46,9 @@\n         if ($targetPath = $this->getTargetPath($request->getSession(), $firewallName)) {\n             return new RedirectResponse($targetPath);\n         }\n \n-         return new RedirectResponse($this->urlGenerator->generate(''));\n+         return new RedirectResponse($this->urlGenerator->generate('chef_Index'));\n          \n     }\n \n     protected function getLoginUrl(Request $request): string\n"
                 }
             ],
             "date": 1674471065947,
